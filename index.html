@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yonut Drink 🥛</title>
+    <style>
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+      h1 {
+        text-align: center;
+        color: rosybrown;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid rosybrown;
+        padding: 16px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 11px;
+      }
+      p {
+        line-height: 1.4;
+        font-size: 16px;
+        margin: 20px 0 10px;
+      }
+      li {
+        text-align: center;
+        font-size: 16px;
+      }
+      .learn-more {
+        padding-top: 10px;
+        text-decoration: none;
+        font-size: 12px;
+        color: rosybrown;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .benefit {
+        color: rosybrown;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: rosybrown;
+        color: white;
+        font-size: 20px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+        font-size: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Yo Tigernut</h1>
+      <h2>Health Benefit of Tigernut Drink</h2>
+      <img src="Yonut.jpeg" alt="Tigernut Drink" />
+      <p>
+        Tigernut milk drink is one of the tastiest and most delicious drink that
+        is made in <strong>Nigeria.</strong>
+        <br />
+        This drink is quite popular in Northern Nigeria, where they call it
+        “kunun aya”. Here in Southern Nigeria, we had nothing to do with the
+        milk until recently. We just buy the nuts “aki Hausa’ and snack on them.
+      </p>
+      <p>
+        If you live outside <strong>Nigeria</strong>, I think you will find them
+        in African shops. There is so much you can do with these nuts, you can
+        choose to eat them as they come or combine them with dates to make a
+        delicious milk drink. Since I learned about the health benefits and the
+        fact that I could extract the milk, I have settled on a simple
+        two-ingredient recipe for tiger nut milk.
+      </p>
+
+      <h3 class="benefit">Health benefits</h3>
+      <p>
+        Most of the nutrient required for our optimum health is naturally
+        embedded in certain fruits and Vegetables. Here are some of te benefits
+        of drinking Yonut Milk
+      </p>
+      <ol>
+        <li>
+          Tiger nuts contain over 15 different elements and nutrients including
+          fiber, calcium, potassium, Zinc, Iron, and Vitamins. Fiber is good for
+          an easy bowel movement and may help with food digestion and also
+          prevent constipation in kids and adults.
+        </li>
+        <li>
+          We have used this milk historically to <em>boost libido</em> and
+          increase sperm count. It acts as a natural aphrodisiac. It could just
+          be what you need to get back your sex life😀.
+        </li>
+        <li>
+          The most important tiger nut milk benefit is surely the fact that it
+          tastes so good and quenches your thirst.
+        </li>
+        <li>
+          Certain researchers found out that tiger nut extract could fight some
+          harmful bacteria in the human body.
+        </li>
+        <p>
+          Hence, drinking this milk helps your immune system and ultimately
+          helps in establishing a defense against bacteria like E.coli,
+          staphylococcus and Salmonella Typhi.
+        </p>
+      </ol>
+      <p>
+        The following are the ingredients for making Yonut drink e.g Tigernut
+        seed, Ginger, Cococnut, Dates and Water.
+      </p>
+      <a
+        href="https://instagram.com/yotigernutdrink?igshid=YmMyMTA2M2Y="
+        target="_blank"
+        class="learn-more"
+        >Learn More on Instagram</a
+      >
+
+      <hr class="line" />
+      <button class="buy-button">👉 Buy Yonut Drink</button>
+      <p class="footer">
+        This page was built by
+        <a href="https://github.com/PreciousAbe" target="_blank"
+          >Precious Abe</a
+        >
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your Name ?");
+        let email = prompt("What is your  Email Adddress ?");
+        let emoji = prompt("What is your Favourite emoji ?");
+        if (name.length) {
+          alert(
+            "Thank you " +
+              name +
+              "! We'll be in touch, meanhwile have a lot of Fresh Yonut drink" +
+              emoji
+          );
+        } else {
+          alert("Sorry, There's no Yonut Drink for you today!");
+        }
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
